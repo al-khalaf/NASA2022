@@ -273,6 +273,16 @@ z-index: 4;
     color: white;
 }
 
+h2{
+    color: white;
+    /* text-align: center; */
+}
+
+ul{
+    color: white;
+    margin-left: 50px;
+}
+
 label{
     font-size: 20px;
 }
