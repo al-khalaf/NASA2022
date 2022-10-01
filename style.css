@@ -58,7 +58,7 @@ body{
 }
 
 .text{
-    width: 300px;
+    width: 350px;
     height: 200px;
     top: 35%;
     color: transparent;
@@ -75,7 +75,7 @@ left:-100px;
 }
 
 p{
-    font-size: 23px;
+    font-size: 20px;
     text-align: left;
     color: white;
 
@@ -285,9 +285,12 @@ ul{
 
 
 label{
-    font-size: 20px;
+    font-size: 15px;
 }
 
+#quiz3h2{
+    font-size: 25px;
+}
 .answers{
     display: flex;
     justify-content: space-around;
@@ -309,4 +312,5 @@ li{
 
 h2{
     margin-top: 10px;
+    text-align: left;
 }

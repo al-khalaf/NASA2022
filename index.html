@@ -9,7 +9,7 @@
     <link rel="icon" href="logo.jpeg">
 </head>
 <body>
-    <div class="line">
+    <div class="line"">
         <div id="spaceCraft">
             <model-viewer
             id="rocket"
@@ -89,12 +89,17 @@
     <div id="frames">
 
         <div id="frame7" class="frame">
-            <div class="text right">
+            <div class="text left" style="position: absolute; bottom: 50px;">
                 
-              <a href="#frame1"><button class="big-button red">Start the journey</button></a>
+              <a href="#frame1"><button class="big-button " style="background-color: rgb(190, 4, 119);">Start the journey</button></a>
               <p>This was the story of a spacecraft that almost touched the sun. Let's start over together!
 
                 </p>
+
+            </div>
+            <div id="sounds-btns"  style="float:right;" style="display: flex;">
+              <button class="big-button"  onclick="sound()">Press to play  audio</button>
+              <button class="big-button"  onclick="pause()">Press to pause  audio</button>
             </div>
           
             
@@ -104,8 +109,8 @@
               <a href="#frame7"><button class="big-button red">Next Step</button></a>
               <h3 id="quiz2h3">How close did the spacecraft get to the sun in meters?</h3>
                 <div class="answers">
-                <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz2h3').style.color='red'">3 Million</label>                
-                <label class="white"><input id="false" type="radio" name="answer"   onchange="document.getElementById('quiz2h3').style.color='green'">5 Million</label>
+                <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz2h3').style.color='red'">3.5 Million</label>                
+                <label class="white"><input id="false" type="radio" name="answer"   onchange="document.getElementById('quiz2h3').style.color='green'">5.3 Million</label>
                 <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz2h3').style.color='red'">2 Million</label>
                 </div>
                 <a href="#frame5"><button class="big-button blue">Previous Step</button></a>
@@ -115,7 +120,7 @@
             <div class="text right">
               <a href="#frame6"><button class="big-button red">Next Step</button></a>
               <video src="SwingbySunCloseUp.mp4" autoplay muted loop style="float:right;  bottom: 300px;"></video>
-              <p>The spacecraft got close to 5 million miles from the sun's surface on Feb 25, 2022</p>
+              <p>The spacecraft got close to 5.3 million miles from the sun's surface on Feb 25, 2022</p>
               <a href="#frame4"><button class="big-button blue ">Previous Step</button></a>
             </div>
             <div id="sunDiv">
@@ -180,6 +185,13 @@
     </div>
 
     <script>
+      var audio = new Audio('solar.mp3');
+
+      function sound(){
+      audio.play();}
+      function pause(){
+        audio.pause()
+      }
     </script>
 </body>
 </html>
