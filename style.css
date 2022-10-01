@@ -64,7 +64,7 @@ left:-100px;
 }
 
 p{
-    font-size: 15px;
+    font-size: 23px;
     text-align: left;
 
 }
@@ -146,11 +146,11 @@ a:hover{
 
 #rocket{
     width: 500px;
-    height: 700px;
+    height: 500px;
     left: 50%;
     top: 50%;
     margin-left: -250px;
-    margin-top: -350px;
+    margin-top: -250px;
 }
 
 #moon{
