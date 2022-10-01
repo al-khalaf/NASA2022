@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <style>
 
@@ -27,7 +29,7 @@
 
       .solar-h1{
         text-transform: uppercase;
-        color: wheat;
+        color: white;
     font-size: 400%;
     white-space: nowrap;
     margin-top: 60px;
@@ -37,7 +39,7 @@
       }
       .solar-h2{
         text-transform: uppercase;
-        color: wheat;
+        color: #90a4ae;
     font-size: 180%;
     white-space: nowrap;
     margin-top: 60px;
@@ -49,13 +51,16 @@
       }
 
       #startBtn{
-        width: 150px;
-        height: 100px;
+        width: 400px;
+        height: 150px;
          position: absolute;
+         
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
+    font-size:35px;
+    
     
     margin: auto;
       }
@@ -102,6 +107,15 @@
   z-index: -1;
 }
 
+a{
+  color:inherit !important;
+
+   text-decoration: none !important;
+}
+
+
+
+
     </style>
 
     <div class="solar-h1" style="text-align: center">Parker's Journey</div>
@@ -110,6 +124,10 @@
     <video autoplay muted loop id="myVideo">
       <source src="https://www.solarsystemscope.com/video/sss3_intro_720p_2-5b.mp4" type="video/mp4">
     </video>
+
+    <button id="startBtn" type="button" class="btn btn-outline-info btn-lg btn-radius ">
+      <a href="./index.html">Ready To Get Started!</a>
+    </button>
 
 
     <script>
