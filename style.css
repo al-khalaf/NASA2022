@@ -51,10 +51,12 @@ body{
     width: 300px;
     height: 200px;
     top: 35%;
-    color: white;
+    color: transparent;
     position: relative;
     border: 2px solid lightblue;
-
+    border-radius: 20px;
+    font-weight: 800;
+left:-100px;
 }
 
 #frame1{
@@ -62,8 +64,8 @@ body{
 }
 
 p{
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
 
 }
 
@@ -113,7 +115,7 @@ p{
     position: absolute;
     background-color: lightblue;
     left: 25%;
-    width: 120px;
+    width: 140px;
     height: 30px;
     padding: 5px;
     border-radius: 10px;
@@ -202,7 +204,7 @@ z-index: 4;
 }
 
 label{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .answers{
@@ -210,20 +212,19 @@ label{
     justify-content: space-around;
 }
 
-#frame1 p{
-    font-size: 22px;
-}
 
-.rotatingAnimation{
+.text:hover{
     animation-name: rotating;
     animation-duration: 2s;
+    animation-fill-mode:forwards;
 }
 
 @keyframes rotating {
     0%{
-        border: 2px solid blue;
+        color: transparent;
     }
     100%{
-        transform: rotateY(1800deg);
+        transform: rotateZ(1800deg);
+        color: white;
     }
 }

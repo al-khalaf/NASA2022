@@ -91,9 +91,10 @@
             <div class="text right">
                 
                 <a href="#frame1" class="button previous startButton" >Start The Journey</a>
-                <p>This was the story of a spacecraft that almost touched the sun. Let's discover the journey together !
+                <p>This was the story of a spacecraft that almost touched the sun. Let's start over together!
 
                 </p>
+                <button onclick="audioPlayer()" style="float:right">|></button>
             </div>
           
             
@@ -101,7 +102,7 @@
         <div id="frame6">
             <div class="text left">
                 <a href="#frame7" class="button next">Next Step</a>
-                <h3 id="quiz1h3">How close did the spacecraft get to the sun in meters?</h3>
+                <h3 id="quiz2h3">How close did the spacecraft get to the sun in meters?</h3>
                 <div class="answers">
                 <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz1h3').style.color='red'">3 Million</label>                
                 <label class="white"><input id="false" type="radio" name="answer"   onchange="document.getElementById('quiz1h3').style.color='green'">5 Million</label>
@@ -113,7 +114,7 @@
         <div id="frame5">
             <div class="text right">
                 <a href="#frame6" class="button next">Next Step</a>
-                    <p>The spacecraft got close to 5 million miles from the sun's surface on Feb 25, 2022   </p>
+                    <p>The spacecraft got close to 5 million miles from the sun's surface on Feb 25, 2022</p>
                 <a href="#frame4" class="button previous">Previous Step</a>
             </div>
             <div id="sunDiv">
@@ -168,7 +169,9 @@
     </div>
 
     <script>
-    
+        function audioPlayer(){
+    var audio = new Audio('audio_file.mp3');
+    audio.play();}
     </script>
 </body>
 </html>
