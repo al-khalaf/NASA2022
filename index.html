@@ -159,9 +159,8 @@
             <img src="Earth.png" alt="" id="earth">
 
             <div class="text right">
-                <a href="#frame2" class="next startButton">Take Off</a>
-                <p>On 12th of August 2018, Parker Solar Probe launched from earth on a 7 years mission to explore the atmosphere of the sun.
-                </p>  
+                <button class="big-button "><a href="#frame2" class="">Take Off</a></button>
+                <p>On 12th of August 2018, Parker Solar Probe launched from earth on a 7 years mission to explore the atmosphere of the sun.</p>  
             </div>
 
         </div>
@@ -172,6 +171,11 @@
         function audioPlayer(){
     var audio = new Audio('audio_file.mp3');
     audio.play();}
+
+
+    window.addEventListener("scroll", function(){
+        console.log("..")
+    })
     </script>
 </body>
 </html>
