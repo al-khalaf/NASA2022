@@ -282,18 +282,10 @@ label{
     justify-content: space-around;
 }
 
-
-/* .text:hover{
-    animation-name: rotating;
-    animation-duration: 2s;
-    animation-fill-mode:forwards;
-} */
-
-@keyframes rotating {
-    0%{
-        color: transparent;
-    }
-    100%{
-        color: white;
-    }
+video{
+    border-radius: 10px;;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    right: 4%;
 }
